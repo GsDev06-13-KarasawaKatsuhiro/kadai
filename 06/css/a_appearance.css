@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom:50px;
+}
+
+
+.question{
+    display: flex;
+    flex-direction: row;
+    margin-top:20px;
+}
+
+.item{
+    padding-right:10px;
+    text-align: right;
+}
+
+.item p{
+    margin-top:10px;
+}
+
+.one{
+    height:51.5px;
+}
+
+.two{
+    height:65.5px;
+}
+
+.three{
+    height:180px;
+}
+
+.four{
+    height:180px;
+}
+
+.five{
+    height:51.5px;
+}
+
+.six{
+    height:51.5px;
+}
+
+.seven{
+    height:180px;
+}
+
+
+.form-left div{
+    border-right:0.1px solid gray;
+    border-top:0.1px solid gray;
+    border-bottom:0.1px solid gray;
+}
+
+.form-right div{
+    padding:10px 10px;
+    border-left:0.1px solid gray;
+    border-top:0.1px solid gray;
+    border-bottom:0.1px solid gray;
+    text-align: left;
+}
+
+.form-right input{
+    margin:5px auto;
+}
+
+
+.form-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    width:250px;
+    height:20px;
+    border-radius: 5px;
+}
+
+.sub-box{
+    text-align: center;
+}
+.submit{
+    margin:20px;
+    width:150px;
+    height:30px;
+    border-radius:10px;
+}
+
+.submit:hover{
+    color:white;
+    opacity:0.7;
+}
+
+a:hover{
+    opacity:0.7;
+    color:orange;
+}
+
+.item-1{
+    height:80px;
+}
+
+.link{
+    text-align: center;
+}
