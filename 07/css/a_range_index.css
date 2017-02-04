@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*header*/
+.container-fluid {
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+/*header-end*/
+
+/*body*/
+.back{
+    background-image: url(bgi.jpg);
+    background-size:cover;
+    height:600px;
+}
+
+
+
+.jumbotron{
+    position:absolute;
+    top:105px;
+    left:20px;
+/*    margin-top: 105px;*/
+    background-color: gray;
+    border-radius: 10px;
+}
+
+
+
+fieldset legend{
+    color:white;
+    padding-bottom:10px;
+}
+
+fieldset label input{
+    margin-bottom:5px;
+    margin-top: 5px;
+}
+
+span {
+    color:white;
+/*    margin-bottom:10px;*/
+}
+
+fieldset input, textarea{
+    border-radius: 3px;
+}
+
+
+.submit{
+    margin-left:300px;
+    margin-top:15px;
+    width:80px;
+    border-radius: 5px;
+    background-color: rgba(135,206,235,0.6);
+}
+
+.submit:hover{
+    background-color: rgba(135,206,235,1);
+    cursor: pointer;
+    color: white;
+}
