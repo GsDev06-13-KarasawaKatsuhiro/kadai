@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/*--header--*/
+.container-fluid {
+    background-color: rgba(100,10,0,0.8);
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+/*--header-end--*/
+/*--body--*/
+.back{
+  background: url(../css/network.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    position:abusolute;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    height: 580px;
+/*    height: auto;*/
+    min-width: 1024px;
+    width: 100%;
+}
+
+.jumbotron{
+    padding-top: 105px;
+}
+
+.table{
+    width: 700px;
+    height: 100%;
+    color: white;
+    background-color: rgba(100,10,0,0.8);
+    table-layout: fixed;
+    word-wrap: break-word;
+    text-align: center;
+    padding:5px;
+}
+
+.table th {
+    color:white;
+    font-weight: 100;
+    font-size: 14px;
+    border:1px solid white;
+    padding:5px;
+}
+
+.table td {
+    color:white;
+    font-weight: 100;
+    font-size: 10px;
+    border:1px solid white;
+    padding:5px;
+}
+
+th.num{
+    width:40px;
+}
+th.kanri_flg, th.life_flg{
+    width:60px;
+}
+
+td .link{
+    color:white;
+    text-decoration: underline;
+}
+
+td .link:hover{
+    color:lightblue;
+}
+
+
+.com{
+    width:300px;
+}
+
+.table td.comment{
+    text-align: left;
+}
+
+.num{
+    width:20px;
+}
+
+.name{
+    width: 150px;
+}
+
+.date{
+    width:70px;
+}
+
+.price{
+    width:70px;
+}
