@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tempest property summary</title>
+    <!--reset css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/task_bar.css">
+<!--     BootstrapのCSS読み込み -->
+<!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+<!--     jQuery読み込みbootstrap&カルーセル -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <!-- jQuery読み込みカルーセル -->
+    <script>window.jQuery || document.write('<script src="js/vendor/jQuery-1.11.3.min.js"><\/script>')</script>
+    <!-- slick読み込みカルーセル -->
+    <script src="js/slick.min.js"></script>
+<!--
+     BootstrapのJS読み込み 
+    <script src="js/bootstrap.min.js"></script>
+-->
+    <!-- カルーセルのcss読み込み -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/property_summary.css">
+    
+    <script>
+        $(function (){
+            
+            //カルーセル（物件）
+            $('.cards .slider').slick({
+                accessibility: true,
+                dots: true,
+                arrows: true,
+                infinite: false,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                prevArrow:'<img src="img/arrow_right5.png" class="prev" width="30" height="40">',
+                nextArrow:'<img src="img/arrow_right5.png" class="next" width="30" height="40">'
+//                prevArrow:'<img src="img/arrow_left2.jpg" class="prev" width="30" height="40">',
+//                nextArrow:'<img src="img/arrow_left2.jpg" class="next" width="30" height="40">'
+            });
+          
+            //カルーセル（物件写真）
+            $('.prop_pic .prop_pic_slider').slick({
+                accessibility: true,
+                dots: false,
+                arrows: false,
+                infinite: true,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                speed: 500
+            });
+          
+        });
+        
+        
+        
+        
+    </script>
+  </head>
+  
+  <body>
+<div class="container">
+    <div class="header">
+        <div class="logo"><img src="img/logo2.png" alt="tempest logo"></div>
+        <div class="menu">
+            <a href="">My page</a>
+            <a href="">Help</a>
+            <a href="">Contact</a>
+            <a href="">Log out</a>
+        </div>
+    </div>
+    
+    <div class="task">
+        <p class="title">物件一覧</p>
+        <div class="task_bar">
+           <button onclick="location.href='property_info_register.html'">物件登録</button>
+           <button>Chart</button>
+           <button>Sort</button>
+           <button onclick="location.href='rooms_summary.html'">Change</button>
+        </div>
+    </div>
+    
+    <div class="cards_container">
+    <div class="cards">
+        <ul class="slider">
+            <li><div class="prop_card_out"><div class="prop_card_in">
+                <a class="prop_name" href="property_info_mgt_repair.html">浅草op.1</a>
+                <p class="prop_add">東京都台東区</p>
+                <div class="prop_pic">
+                <ul class="prop_pic_slider">
+                <li><img src="img/LP_top3.jpg" alt=""></li>
+                <li><img src="img/icon_features3.png" alt=""></li>
+                <li><img src="img/icon_features2.png" alt=""></li>
+                </ul>
+                </div>
+                <div class="card_under">
+                <div class="card_top under">
+                <p>3年／築9年</p>
+                <p>耐45年</p>
+                </div>
+                <div class="card_mid under">
+                <p>2部屋／3部屋</p>
+                <p>66%</p>
+                </div>
+                <div class="card_low under">
+                <p>7.5%</p>
+                <p>1.4%</p>
+                <img class="alert" src="img/alert_red.png" alt="alert" >
+                </div>
+                </div>
+            </div></div></li>
+            
+            <li><div class="prop_card_out"><div class="prop_card_in">
+                <a class="prop_name" href="#">浅草op.1</a>
+                <p class="prop_add">東京都台東区</p>
+                <div class="prop_pic">
+                <ul class="prop_pic_slider">
+                <li><img src="img/LP_top3.jpg" alt=""></li>
+                <li><img src="img/icon_features3.png" alt=""></li>
+                <li><img src="img/icon_features2.png" alt=""></li>
+                </ul>
+                </div>
+                <div class="card_under">
+                <div class="card_top under">
+                <p>3年／築9年</p>
+                <p>耐45年</p>
+                </div>
+                <div class="card_mid under">
+                <p>2部屋／3部屋</p>
+                <p>66%</p>
+                </div>
+                <div class="card_low under">
+                <p>7.5%</p>
+                <p>1.4%</p>
+                <img class="alert" src="img/alert_red.png" alt="alert" >
+                </div>
+                </div>
+            </div></div></li>
+            
+            <li><div class="prop_card_out"><div class="prop_card_in">
+                <a class="prop_name" href="#">浅草op.1</a>
+                <p class="prop_add">東京都台東区</p>
+                <div class="prop_pic">
+                <ul class="prop_pic_slider">
+                <li><img src="img/LP_top3.jpg" alt=""></li>
+                <li><img src="img/icon_features3.png" alt=""></li>
+                <li><img src="img/icon_features2.png" alt=""></li>
+                </ul>
+                </div>
+                <div class="card_under">
+                <div class="card_top under">
+                <p>3年／築9年</p>
+                <p>耐45年</p>
+                </div>
+                <div class="card_mid under">
+                <p>2部屋／3部屋</p>
+                <p>66%</p>
+                </div>
+                <div class="card_low under">
+                <p>7.5%</p>
+                <p>1.4%</p>
+                <img class="alert" src="img/alert_red.png" alt="alert" >
+                </div>
+                </div>
+            </div></div></li>
+            
+                        <li><div class="prop_card_out"><div class="prop_card_in">
+                <a class="prop_name" href="#">浅草op.1</a>
+                <p class="prop_add">東京都台東区</p>
+                <div class="prop_pic">
+                <ul class="prop_pic_slider">
+                <li><img src="img/LP_top3.jpg" alt=""></li>
+                <li><img src="img/icon_features3.png" alt=""></li>
+                <li><img src="img/icon_features2.png" alt=""></li>
+                </ul>
+                </div>
+                <div class="card_under">
+                <div class="card_top under">
+                <p>3年／築9年</p>
+                <p>耐45年</p>
+                </div>
+                <div class="card_mid under">
+                <p>2部屋／3部屋</p>
+                <p>66%</p>
+                </div>
+                <div class="card_low under">
+                <p>7.5%</p>
+                <p>1.4%</p>
+                <img class="alert" src="img/alert_red.png" alt="alert" >
+                </div>
+                </div>
+            </div></div></li>
+            
+                        <li><div class="prop_card_out"><div class="prop_card_in">
+                <a class="prop_name" href="#">浅草op.1</a>
+                <p class="prop_add">東京都台東区</p>
+                <div class="prop_pic">
+                <ul class="prop_pic_slider">
+                <li><img src="img/LP_top3.jpg" alt=""></li>
+                <li><img src="img/icon_features3.png" alt=""></li>
+                <li><img src="img/icon_features2.png" alt=""></li>
+                </ul>
+                </div>
+                <div class="card_under">
+                <div class="card_top under">
+                <p>3年／築9年</p>
+                <p>耐45年</p>
+                </div>
+                <div class="card_mid under">
+                <p>2部屋／3部屋</p>
+                <p>66%</p>
+                </div>
+                <div class="card_low under">
+                <p>7.5%</p>
+                <p>1.4%</p>
+                <img class="alert" src="img/alert_red.png" alt="alert" >
+                </div>
+                </div>
+            </div></div></li>
+            
+                        <li><div class="prop_card_out"><div class="prop_card_in">
+                <a class="prop_name" href="#">浅草op.1</a>
+                <p class="prop_add">東京都台東区</p>
+                <div class="prop_pic">
+                <ul class="prop_pic_slider">
+                <li><img src="img/LP_top3.jpg" alt=""></li>
+                <li><img src="img/icon_features3.png" alt=""></li>
+                <li><img src="img/icon_features2.png" alt=""></li>
+                </ul>
+                </div>
+                <div class="card_under">
+                <div class="card_top under">
+                <p>3年／築9年</p>
+                <p>耐45年</p>
+                </div>
+                <div class="card_mid under">
+                <p>2部屋／3部屋</p>
+                <p>66%</p>
+                </div>
+                <div class="card_low under">
+                <p>7.5%</p>
+                <p>1.4%</p>
+                <img class="alert" src="img/alert_red.png" alt="alert" >
+                </div>
+                </div>
+            </div></div></li>
+            
+
+        </ul>
+    </div>
+    </div>
+ </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*---header---*/
+.header{
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+/*  margin-right: -15px;*/
+/*  margin-left: -15px;*/
+
+}
+
+.logo img{
+  width:60%;
+}
+
+.menu{
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header a{
+  margin: 5%;
+  color: white;
+}

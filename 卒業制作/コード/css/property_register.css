@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+
+.register_form{
+  margin: 3% 0 0 5%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.register_form td{
+  padding-bottom: 5%;
+}
+
+.register_form td:last-child{
+  padding-left: 5%;
+}
+
+.register_form table tr .com_items table tr td input{
+  width: 113%;
+}
+
+.register_form table tr td select{
+  width: 113%;
+}
+
+.register_form table tr td input{
+  width: 110%;
+}
+
+.submit{
+  width: 30%;
+  height: 120%;
+  border-radius: 3px;
+  margin-top: -3%;
+}
+
+.sub_box{
+  display: flex;
+  justify-content:flex-end;
+  width:108%;
+  height: 5%;
+}

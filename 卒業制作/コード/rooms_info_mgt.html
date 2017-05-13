@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tempest property info register</title>
+    <!--reset css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/task_bar.css">
+<!--     BootstrapのCSS読み込み -->
+<!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+<!--     jQuery読み込みbootstrap&カルーセル -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <!-- jQuery読み込みカルーセル -->
+    <script>window.jQuery || document.write('<script src="js/vendor/jQuery-1.11.3.min.js"><\/script>')</script>
+    <!-- slick読み込みカルーセル -->
+    <script src="js/slick.min.js"></script>
+<!--
+     BootstrapのJS読み込み 
+    <script src="js/bootstrap.min.js"></script>
+-->
+    <!-- カルーセルのcss読み込み -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    
+    <link rel="stylesheet" href="css/rooms/rooms_info_mgt.css">
+    
+   <script>
+        $(function (){
+            
+            //カルーセル（物件）
+            $('.prop_pic .slider').slick({
+                accessibility: true,
+                dots: false,
+                arrows: true,
+                infinite: false,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                prevArrow:'<img src="img/arrow_right4.png" class="prev" width="15" height="40">',
+                nextArrow:'<img src="img/arrow_right4.png" class="next" width="15" height="40">'
+//                prevArrow:'<img src="img/arrow_left2.jpg" class="prev" width="30" height="40">',
+//                nextArrow:'<img src="img/arrow_left2.jpg" class="next" width="30" height="40">'
+            });
+            });
+    </script>
+    
+  </head>
+  
+  <body>
+<div class="container">
+    <div class="header">
+        <div class="logo"><img src="img/logo2.png" alt="tempest logo"></div>
+        <div class="menu">
+            <a href="">My page</a>
+            <a href="">Help</a>
+            <a href="">Contact</a>
+            <a href="">Log out</a>
+        </div>
+    </div>
+    
+    <div class="task">
+        <p class="title">部屋情報管理</p>
+        <div class="task_bar">
+           <button onclick="location.href=''">基礎情報</button>
+           <button onclick="location.href='#'">文書管理</button>
+           <button onclick="location.href='#'">工事管理</button>
+           <button onclick="location.href='#'">Chart</button>
+           <button onclick="location.href='rooms_summary.html'">一覧へ戻る</button>
+        </div>
+    </div>
+    
+<!--------以下main----------->
+    
+    <div class="main_box">
+      <div class="room_info_top">
+        <p>浅草Op.1</p>
+        <p class="prop_info">
+          <span>築6年　</span>
+          <span>駅歩8分　</span>
+          <span>稼働率86%　</span>
+          <span>6.5%</span>
+<!--          <span>⇒7.8%</span>-->
+        </p>
+
+      </div>
+      
+      <div class="room_info_mgt">
+        <div class="room_info_basic">
+         <form method="POST" action="#">
+          
+        <table border="0">
+          <tr>
+            <td>Room No.</td>
+            <td class="room_info_ringt"><input type="text" name="room_number"></td>
+          </tr>
+          <tr>
+            <td>階数</td>
+            <td class="room_info_ringt"><input type="text" name="floor"></td>
+          </tr>
+          <tr>
+            <td>間取り</td>
+            <td class="room_info_ringt"><input type="text" name="layout"></td>
+          </tr>
+          <tr>
+            <td>広さ</td>
+            <td class="room_info_ringt"><input type="text" name="largeness"></td>
+          </tr>
+          <tr>
+            <td>導入設備</td>
+            <td class="room_info_ringt">
+              <input type="checkbox" name="equipment" value="">温水洗浄便座
+              <input type="checkbox" name="equipment" value="">ドアホン
+              <input type="checkbox" name="equipment" value="">浴室内乾燥機
+              <input type="checkbox" name="equipment" value="">
+              <input type="checkbox" name="equipment" value="">
+              <input type="checkbox" name="equipment" value="">
+            </td>
+          </tr>
+
+          
+          <tr>
+            <td>リフォーム実績</td>
+            <td class="room_info_ringt">      １件</td>
+          </tr>
+          
+          <tr>
+            <td class="pic_left">
+              <div class="prop_pic_register_box">間取り図
+                <div class="regist_panel">
+                  <input type="file" id="uploadFile" name="image">
+                  <p>登録日<input type="text"></p>
+
+                  <div class="sub_box">
+                    <input class="submit" type="submit" value="追加">
+                    <input class="submit" type="submit" value="更新">
+                    <input class="submit" type="submit" value="削除">
+                  </div>
+                </div>
+              </div>
+            </td>
+            
+            <td>
+               <img  class="layout_map" src="img/LP_top3.jpg" alt="">
+            </td>
+          </tr>
+
+
+          <tr>
+            <td class="pic_left">
+              <div class="prop_pic_register_box">室内写真
+              <div class="regist_panel">
+                <input type="file" id="uploadFile" name="image">
+                <p>画像名<input type="text"></p>
+                <p>登録日<input type="text"></p>
+
+                <div class="sub_box">
+                  <input class="submit" type="submit" value="追加">
+                  <input class="submit" type="submit" value="更新">
+                  <input class="submit" type="submit" value="削除">
+                </div>
+              </div>
+              </div>
+            </td>
+
+
+            <td class="room_pic_right">
+              <div class="prop_pic_box">
+                <div class="prop_pic">
+                  <ul class="slider">
+                   
+                    <li><div class="prop_pic_out">
+                      <form method="POST" action="#">
+                        <p class="prop_pic_name" href="#">正面</p>
+                      </form>
+                      <img src="img/LP_top3.jpg" alt="">
+                      <p class="prop_pic_date" href="#">2017/3/26</p>
+                    </div></li>
+
+                   
+                    <li><div class="prop_pic_out">
+                      <form method="POST" action="#">
+                        <p class="prop_pic_name" href="#">正面</p>
+                      </form>
+                      <img src="img/LP_top3.jpg" alt="">
+                      <p class="prop_pic_date" href="#">2017/3/26</p>
+                    </div></li>
+                    
+
+                    <li><div class="prop_pic_out">
+                      <form method="POST" action="#">
+                        <p class="prop_pic_name" href="#">正面</p>
+                      </form>
+                      <img src="img/LP_top3.jpg" alt="">
+                      <p class="prop_pic_date" href="#">2017/3/26</p>
+                    </div></li>
+                    
+
+                    <li><div class="prop_pic_out">
+                      <form method="POST" action="#">
+                        <p class="prop_pic_name" href="#">正面</p>
+                      </form>
+                      <img src="img/LP_top3.jpg" alt="">
+                      <p class="prop_pic_date" href="#">2017/3/26</p>
+                    </div></li>
+
+                   
+                    <li><div class="prop_pic_out">
+                      <form method="POST" action="#">
+                        <p class="prop_pic_name" href="#">正面</p>
+                      </form>
+                      <img src="img/LP_top3.jpg" alt="">
+                      <p class="prop_pic_date" href="#">2017/3/26</p>
+                    </div></li>
+
+                   
+                    <li><div class="prop_pic_out">
+                      <form method="POST" action="#">
+                        <p class="prop_pic_name" href="#">正面</p>
+                      </form>
+                      <img src="img/LP_top3.jpg" alt="">
+                      <p class="prop_pic_date" href="#">2017/3/26</p>
+                    </div></li>
+
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+       
+       
+       
+        </table>
+          
+          
+          <table class="room_info_detail">
+          <tr>
+            <td>Status</td>
+            <td>
+             <select name="room_status" id="">
+               <option value="occupied">稼働中</option>
+               <option value="reserved">成約済み</option>
+               <option value="expiring">退去予定</option>
+               <option value="vacant">募集中</option>
+             </select>
+            </td>
+          </tr>
+          <tr>
+            <td>入居日</td>
+            <td><input type="text" name="rent"></td>
+          </tr>
+          <tr>
+            <td>退去日（退去予定日）</td>
+            <td><input type="text" name="rent"></td>
+          </tr>
+
+         
+         
+          <tr>
+            <td>賃料</td>
+            <td><input type="text" name="rent"></td>
+          </tr>
+          <tr>
+            <td>共益費等</td>
+            <td><input type="text" name="service_charge"></td>
+          </tr>
+          <tr>
+            <td>敷金</td>
+            <td><input type="text" name="deposit"></td>
+          </tr>
+          <tr>
+            <td>礼金</td>
+            <td><input type="text" name="key_money"></td>
+          </tr>
+          <tr>
+            <td>仲介手数料</td>
+            <td><input type="text" name="agent_fee"></td>
+          </tr>
+          
+          <tr>
+            <td>他条件</td>
+            <td><input type="text" name="other_conditions"></td>
+          </tr>
+
+
+        </table>
+        <div class="sub_box">
+        <input class="submit-last" type="submit" value="登録">
+        </div>
+          
+                     
+           
+         </form>
+         
+         
+         
+         
+         
+         
+         
+<!--
+          <table class="room_info_table" border="0.5">
+            <colgroup>
+              <col style="width:7%;">
+              <col style="width:7%;">
+              <col style="width:8%;">
+              <col style="width:100/13%;">
+              <col style="width:100/13%;">
+              <col style="width:6%;">
+              <col style="width:6%;">
+              <col style="width:6%;">
+              <col style="width:7%;">
+              <col style="width:7%;">
+              <col style="width:6%;">
+              <col style="width:5%;">
+              <col style="width:5%;">
+              <col style="width:6%;">
+              <col style="width:4%;">
+            </colgroup>
+            
+            <tr>
+              <th class="status">Status</th>
+              <th class="repair_date">Room No.</th>
+              <th class="repair_detail">間取り<br>広さ</th>
+              <th class="price">賃料<br>管理費等</th>
+              <th class="com_name">敷、礼、仲介料</th>
+              <th class="remark">他条件</th>
+              <th class="repair_date">導入設備</th>
+              <th class="repair_detail">工事実績</th>
+              <th class="price">入居期間</th>
+              <th class="com_name">残期間<br>空室期間</th>
+              <th class="remark">問合せ数<br>内見数</th>
+              <th class="repair_date">画像</th>
+              <th class="repair_detail">文書</th>
+              <th class="price">Message</th>
+              <th class="Delete">Del</th>
+            </tr>
+            
+            <tr class="vacant">
+              <td> 募集中</td>
+              <td><a href=""> 101</a></td>
+              <td> 1K<br>25.12㎡</td>
+              <td> 9.0万円<br> 0.2万円</td>
+              <td> 1月、1月、2月</td>
+              <td> 1</td>
+              <td> 3</td>
+              <td> 12</td>
+              <td> 0月</td>
+              <td> 0月<br> 2.3月</td>
+              <td> 7<br> 2</td>
+              <td> 5</td>
+              <td> 9</td>
+              <td> 14</td>
+              <td> <img class="minus" src="img/minus_icon.png" alt=""></td>
+            </tr>
+
+            
+          </table>
+          
+-->
+        </div>
+      </div>
+    </div>
+        
+
+    
+ </div>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+.container{
+  width: 100%;
+  max-height:100%;
+  margin: 0;
+/*  padding: -15px;*/
+}
+
+.header{
+  position: fixed;
+  height: 10%;
+  z-index: 10;
+
+}
+
+/*---top-main----*/
+
+.top-main{
+  padding-top: 8%;
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/LP_top2.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-box{
+  width: 40%;
+}
+
+.main-parts{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.main-parts p{
+  color: white;
+/*  font-weight: bold;*/
+  font-size: 30px;
+  margin: 1% auto;
+}
+
+.main-parts img{
+  width: 100%;
+}
+
+.logins{
+  width: 30%;
+  margin: 1% auto;
+  margin-bottom: 6%;
+}
+
+.logins a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: lightgrey;
+  margin: 6% auto;
+  cursor: pointer;
+}
+.logins a:last-child{
+  opacity: 0;
+  cursor:default;
+}
+
+.ribbon{
+  width: 100%;
+  height: 80px;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: rgba(113, 79, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jump{
+  width: 100%;
+  height:250px;
+  opacity: 0;
+  position: relative;
+  top: -50px;
+}
+
+
+/*------Mission--------*/
+.mission{
+  text-align: center;
+  padding: 2%;
+}
+
+.mission p{
+  margin: 2%}
+
+
+/*---features-----*/
+.features_colored{
+  width: 100%;
+  background-color: rgba(113, 79, 0, 0.05);
+}
+
+.features_left{
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+}
+
+.features_detail{
+  width: 40%;
+  margin: auto 0;
+/*  display: flex;*/
+/*  align-items:baseline;*/
+}
+
+.features_title{
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.features_detail p{
+  margin:3% auto;
+  
+}
+
+.features_right{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding: 5%;
+}
+
+
+/*---plans & contact & footer---*/
+
+.plans_detail, .contact_detail{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer{
+  height: 70px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/*---task----*/
+.task{
+  background-color: rgba(173, 216, 230, 0.8);
+  display: flex;
+  justify-content: space-between;
+  height: 15%;
+}
+
+.title{
+  width:40%;
+  font-size: 30px;
+  color: gray;
+  margin: 0.5% 0 0.5% 2%;
+}
+
+.task_bar{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.task_bar button{
+  width: 30%;
+  font-weight: bold;
+  color: gray;
+  background-color: rgba(0, 0, 0, 0);
+  border: transparent 3px solid;
+  position:relative;
+}
+
+.task_bar button:hover{
+  transition: 0.5s;
+  color: #FFF;
+}
+
+.task_bar button::before, .task_bar button::after{
+  width: 100%;
+  height:100%;
+  content:"";
+  position: absolute;
+  top:-1px;
+  left:-1px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.task_bar button:hover::before{
+  border-bottom: 3px solid #FFF;
+  border-left: 3px solid #FFF;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+    transform: scale(1);
+}
+
+.task_bar button:hover::after{
+  border-top: 3px solid #FFF;
+  border-right: 3px solid #FFF;
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  transform: scale(1);
+}

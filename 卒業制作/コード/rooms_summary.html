@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tempest property info register</title>
+    <!--reset css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/task_bar.css">
+<!--     BootstrapのCSS読み込み -->
+<!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+<!--     jQuery読み込みbootstrap&カルーセル -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <!-- jQuery読み込みカルーセル -->
+    <script>window.jQuery || document.write('<script src="js/vendor/jQuery-1.11.3.min.js"><\/script>')</script>
+    <!-- slick読み込みカルーセル -->
+    <script src="js/slick.min.js"></script>
+<!--
+     BootstrapのJS読み込み 
+    <script src="js/bootstrap.min.js"></script>
+-->
+    <!-- カルーセルのcss読み込み -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    
+    <link rel="stylesheet" href="css/rooms/rooms_summary.css">
+    
+  </head>
+  
+  <body>
+<div class="container">
+    <div class="header">
+        <div class="logo"><img src="img/logo2.png" alt="tempest logo"></div>
+        <div class="menu">
+            <a href="">My page</a>
+            <a href="">Help</a>
+            <a href="">Contact</a>
+            <a href="">Log out</a>
+        </div>
+    </div>
+    
+    <div class="task">
+        <p class="title">部屋一覧</p>
+        <div class="task_bar">
+<!--           <button onclick="location.href='property_info_mgt_basic.html'">基礎情報</button>-->
+           <button onclick="location.href='#'">Chart</button>
+           <button onclick="location.href='#'">Sort</button>
+           <button onclick="location.href='property_summary.html'">Change</button>
+        </div>
+    </div>
+    
+<!--------以下main----------->
+    
+    <div class="main_box">
+      <div class="room_info_top">
+        <p>浅草Op.1</p>
+        <p class="prop_info">
+          <span>築6年　</span>
+          <span>駅歩8分　</span>
+          <span>稼働率86%　</span>
+          <span>6.5%</span>
+          <span>⇒7.8%</span>
+        </p>
+
+      </div>
+      
+      <div class="room_info_bottom">
+        <div class="room_info_summary">
+          <table class="room_info_table" border="0.5">
+            <colgroup>
+              <col style="width:7%;">
+              <col style="width:7%;">
+              <col style="width:8%;">
+              <col style="width:100/13%;">
+              <col style="width:100/13%;">
+              <col style="width:6%;">
+              <col style="width:6%;">
+              <col style="width:6%;">
+              <col style="width:7%;">
+              <col style="width:7%;">
+              <col style="width:6%;">
+              <col style="width:5%;">
+              <col style="width:5%;">
+              <col style="width:6%;">
+              <col style="width:4%;">
+            </colgroup>
+            
+            <tr>
+              <th class="status">Status</th>
+              <th class="repair_date">Room No.</th>
+              <th class="repair_detail">間取り<br>広さ</th>
+              <th class="price">賃料<br>管理費等</th>
+              <th class="com_name">敷、礼、仲介料</th>
+              <th class="remark">他条件</th>
+              <th class="repair_date">導入設備</th>
+              <th class="repair_detail">工事実績</th>
+              <th class="price">入居期間</th>
+              <th class="com_name">残期間<br>空室期間</th>
+              <th class="remark">問合せ数<br>内見数</th>
+              <th class="repair_date">画像</th>
+              <th class="repair_detail">文書</th>
+              <th class="price">Message</th>
+              <th class="Delete">Del</th>
+            </tr>
+            
+            <tr class="vacant">
+              <td> 募集中</td>
+              <td><a href=""> 101</a></td>
+              <td> 1K<br>25.12㎡</td>
+              <td> 9.0万円<br> 0.2万円</td>
+              <td> 1月、1月、2月</td>
+              <td> 1</td>
+              <td> 3</td>
+              <td> 12</td>
+              <td> 0月</td>
+              <td> 0月<br> 2.3月</td>
+              <td> 7<br> 2</td>
+              <td> 5</td>
+              <td> 9</td>
+              <td> 14</td>
+              <td> <img class="minus" src="img/minus_icon.png" alt=""></td>
+            </tr>
+            
+            <tr class="occupied">
+              <td> 稼働中</td>
+              <td><a href=""> 102</a></td>
+              <td> 1K<br>25.12㎡</td>
+              <td> 9.0万円<br> 0.2万円</td>
+              <td> 0月、0月、0月</td>
+              <td> 1</td>
+              <td> 2</td>
+              <td> 5</td>
+              <td> 15.6月</td>
+              <td> 0月<br> 0月</td>
+              <td> 0<br> 0</td>
+              <td> 5</td>
+              <td> 3</td>
+              <td> 4</td>
+              <td> <img class="minus" src="img/minus_icon.png" alt=""></td>
+            </tr>
+            
+            <tr class="reserved">
+              <td> 成約済み</td>
+              <td><a href=""> 103</a></td>
+              <td> 1K<br>25.12㎡</td>
+              <td> 9.0万円<br> 0.2万円</td>
+              <td> 1月、1月、2月</td>
+              <td> 1</td>
+              <td> 2</td>
+              <td> 7</td>
+              <td> 38.4月</td>
+              <td> 1.5月<br> 0月</td>
+              <td> 4<br> 0</td>
+              <td> 5</td>
+              <td> 4</td>
+              <td> 8</td>
+              <td> <img class="minus" src="img/minus_icon.png" alt=""></td>
+            </tr>
+            
+            <tr class="expiring">
+              <td> 退去予定</td>
+              <td><a href=""> 105</a></td>
+              <td> 1K<br>25.12㎡</td>
+              <td> 9.0万円<br> 0.2万円</td>
+              <td> 1月、0月、2月</td>
+              <td> 1</td>
+              <td> 2</td>
+              <td> 3</td>
+              <td> 27.6月</td>
+              <td> 0.5月<br> 0月</td>
+              <td> 0<br> 0</td>
+              <td> 5</td>
+              <td> 4</td>
+              <td> 7</td>
+              <td> <img class="minus" src="img/minus_icon.png" alt=""></td>
+            </tr>
+            
+          </table>
+          <img  class="plus" src="img/plus_icon.png" alt="">
+          
+        </div>
+      </div>
+    </div>
+        
+        
+        
+        
+        
+    <div class="main_box">
+      <div class="room_info_top">
+        <p>浅草Op.1</p>
+        <p class="prop_info">
+          <span>築6年　</span>
+          <span>駅歩8分　</span>
+          <span>稼働率86%　</span>
+          <span>6.5%</span>
+          <span>⇒7.8%</span>
+        </p>
+      </div>
+      
+      <div class="room_info_bottom">
+        <div class="room_info_summary">
+          <table class="room_info_table" border="0.5">
+            <colgroup>
+              <col style="width:7%;">
+              <col style="width:7%;">
+              <col style="width:8%;">
+              <col style="width:100/13%;">
+              <col style="width:100/13%;">
+              <col style="width:6%;">
+              <col style="width:6%;">
+              <col style="width:6%;">
+              <col style="width:7%;">
+              <col style="width:7%;">
+              <col style="width:6%;">
+              <col style="width:5%;">
+              <col style="width:5%;">
+              <col style="width:6%;">
+              <col style="width:4%;">
+            </colgroup>
+            
+            <tr>
+              <th class="status">Status</th>
+              <th class="repair_date">Room No.</th>
+              <th class="repair_detail">間取り<br>広さ</th>
+              <th class="price">賃料<br>管理費等</th>
+              <th class="com_name">敷、礼、仲介料</th>
+              <th class="remark">他条件</th>
+              <th class="repair_date">導入設備</th>
+              <th class="repair_detail">工事実績</th>
+              <th class="price">入居期間</th>
+              <th class="com_name">残期間<br>空室期間</th>
+              <th class="remark">問合せ数<br>内見数</th>
+              <th class="repair_date">画像</th>
+              <th class="repair_detail">文書</th>
+              <th class="price">Message</th>
+              <th class="Delete">Del</th>
+            </tr>
+            
+            <tr class="vacant">
+              <td> 募集中</td>
+              <td><a href=""> 101</a></td>
+              <td> 1K<br>25.12㎡</td>
+              <td> 9.0万円<br> 0.2万円</td>
+              <td> 1月、1月、2月</td>
+              <td> 1</td>
+              <td> 3</td>
+              <td> 12</td>
+              <td> 0月</td>
+              <td> 0月<br> 2.3月</td>
+              <td> 7<br> 2</td>
+              <td> 5</td>
+              <td> 9</td>
+              <td> 14</td>
+              <td> <img class="minus" src="img/minus_icon.png" alt=""></td>
+            </tr>
+            
+            <tr class="occupied">
+              <td> 稼働中</td>
+              <td><a href=""> 102</a></td>
+              <td> 1K<br>25.12㎡</td>
+              <td> 9.0万円<br> 0.2万円</td>
+              <td> 0月、0月、0月</td>
+              <td> 1</td>
+              <td> 2</td>
+              <td> 5</td>
+              <td> 15.6月</td>
+              <td> 0月<br> 0月</td>
+              <td> 0<br> 0</td>
+              <td> 5</td>
+              <td> 3</td>
+              <td> 4</td>
+              <td> <img class="minus" src="img/minus_icon.png" alt=""></td>
+            </tr>
+            
+            <tr class="reserved">
+              <td> 成約済み</td>
+              <td><a href=""> 103</a></td>
+              <td> 1K<br>25.12㎡</td>
+              <td> 9.0万円<br> 0.2万円</td>
+              <td> 1月、1月、2月</td>
+              <td> 1</td>
+              <td> 2</td>
+              <td> 7</td>
+              <td> 38.4月</td>
+              <td> 1.5月<br> 0月</td>
+              <td> 4<br> 0</td>
+              <td> 5</td>
+              <td> 4</td>
+              <td> 8</td>
+              <td> <img class="minus" src="img/minus_icon.png" alt=""></td>
+            </tr>
+            
+            <tr class="expiring">
+              <td> 退去予定</td>
+              <td><a href=""> 105</a></td>
+              <td> 1K<br>25.12㎡</td>
+              <td> 9.0万円<br> 0.2万円</td>
+              <td> 1月、0月、2月</td>
+              <td> 1</td>
+              <td> 2</td>
+              <td> 3</td>
+              <td> 27.6月</td>
+              <td> 0.5月<br> 0月</td>
+              <td> 0<br> 0</td>
+              <td> 5</td>
+              <td> 4</td>
+              <td> 7</td>
+              <td> <img class="minus" src="img/minus_icon.png" alt=""></td>
+            </tr>
+            
+          </table>
+          
+          <img  class="plus" src="img/plus_icon.png" alt="">
+        </div>
+      </div>
+    </div>
+        
+    
+ </div>
+  </body>
+</html>

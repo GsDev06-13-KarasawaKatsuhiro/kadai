@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tempest property info register</title>
+    <!--reset css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/task_bar.css">
+<!--     BootstrapのCSS読み込み -->
+<!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+<!--     jQuery読み込みbootstrap&カルーセル -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <!-- jQuery読み込みカルーセル -->
+    <script>window.jQuery || document.write('<script src="js/vendor/jQuery-1.11.3.min.js"><\/script>')</script>
+    <!-- slick読み込みカルーセル -->
+    <script src="js/slick.min.js"></script>
+<!--
+     BootstrapのJS読み込み 
+    <script src="js/bootstrap.min.js"></script>
+-->
+    <!-- カルーセルのcss読み込み -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    
+    <link rel="stylesheet" href="css/property_mgt_repair.css">
+    
+  </head>
+  
+  <body>
+<div class="container">
+    <div class="header">
+        <div class="logo"><img src="img/logo2.png" alt="tempest logo"></div>
+        <div class="menu">
+            <a href="">My page</a>
+            <a href="">Help</a>
+            <a href="">Contact</a>
+            <a href="">Log out</a>
+        </div>
+    </div>
+    
+    <div class="task">
+        <p class="title">物件運営管理</p>
+        <div class="task_bar">
+           <button onclick="location.href='property_info_mgt_basic.html'">基礎情報</button>
+           <button onclick="location.href='property_info_mgt_repair.html'">工事履歴</button>
+           <button onclick="location.href='property_info_mgt_pic.html'">写真管理</button>
+           <button onclick="location.href='property_summary.html'">一覧へ戻る</button>
+        </div>
+    </div>
+    
+<!--------以下main----------->
+    
+    <div class="main_box">
+      <div class="main_left">
+        <p>工事履歴</p>
+      </div>
+      
+      <div class="main_right">
+        <div class="repair_history">
+          <table class="repair_table">
+            <colgroup>
+              <col style="width:10%;">
+              <col style="width:25%;">
+              <col style="width:10%;">
+              <col style="width:20%;">
+              <col style="width:25%;">
+              <col style="width:10%;">
+            </colgroup>
+            <tr>
+              <th class="repair_date">工事日</th>
+              <th class="repair_detail">内容</th>
+              <th class="price">価格</th>
+              <th class="com_name">業者</th>
+              <th class="remark">備考</th>
+            </tr>
+            <tr>
+              <td>2014年12月</td>
+              <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa屋上防水シート工事</td>
+              <td>258万円</td>
+              <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa㈱サトー</td>
+              <td class="remark_comment">特になしaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+              <td class="btn_box">
+                <div class="btns">
+                  <div>更新</div>
+                  <div>削除</div>
+                </div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>2014年12月</td>
+              <td>屋上防水シート工事</td>
+              <td>258万円</td>
+              <td>㈱サトー</td>
+              <td class="remark_comment">特になし</td>
+              <td class="btn_box">
+                <div class="btns">
+                  <div>更新</div>
+                  <div>削除</div>
+                </div>
+              </td>
+            </tr>
+            
+          </table>
+        </div>
+        
+        <div class="repair_register">
+          <p>工事登録</p>
+          <form method="POST" action="#">
+            <table class="repair_register_outside">
+            <colgroup>
+              <col style="width:3%;">
+              <col style="width:30%;">
+            </colgroup>
+              <tr>
+                <td>工事日</td>
+                <td><input type="text" name="repair_date"></td>
+              </tr>
+              <tr>
+                <td>工事内容</td>
+                <td><input type="text" name="repair_detail"></td>
+              </tr>
+              <tr>
+                <td>工事価格</td>
+                <td><input type="text" name="repair_price"></td>
+              </tr>
+              <tr>
+                <td>工事業者</td>
+                <td class="com_items">
+                 <table class="repair_register_inside">
+                  <colgroup>
+                    <col style="width:20%;">
+                    <col style="width:80%;">
+                  </colgroup>
+                 
+                  <tr>
+                    <td>名称</td>
+                    <td><input type="text" name="repair_com_name"></td>
+                  </tr>
+                  <tr>
+                    <td>住所</td>
+                    <td><input type="text" name="repair_com_address"></td>
+                  </tr>
+                  <tr>
+                    <td>tel</td>
+                    <td><input type="text" name="repair_com_tel"  placeholder="ハイフンなし"></td>
+                  </tr>
+                  <tr>
+                    <td>mail</td>
+                    <td><input type="text" name="repair_com_mail"></td>
+                  </tr>
+                  <tr>
+                    <td>評価</td>
+                    <td>星評価入れる</td>
+                  </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>備考</td>
+                <td><textarea name="repair_remarks" rows="4" cols="36"></textarea>
+              </tr>
+            </table>
+            
+            <div class="sub_box">
+            <input class="submit" type="submit" value="追加">
+            </div>
+            
+          </form>
+        </div>
+      </div>
+      
+    </div>
+    
+    
+ </div>
+  </body>
+</html>

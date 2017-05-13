@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tempest property info register</title>
+    <!--reset css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/task_bar.css">
+<!--     BootstrapのCSS読み込み -->
+<!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+<!--     jQuery読み込みbootstrap&カルーセル -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <!-- jQuery読み込みカルーセル -->
+    <script>window.jQuery || document.write('<script src="js/vendor/jQuery-1.11.3.min.js"><\/script>')</script>
+    <!-- slick読み込みカルーセル -->
+    <script src="js/slick.min.js"></script>
+<!--
+     BootstrapのJS読み込み 
+    <script src="js/bootstrap.min.js"></script>
+-->
+    <!-- カルーセルのcss読み込み -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    
+    <link rel="stylesheet" href="css/property_register.css">
+    
+  </head>
+  
+  <body>
+<div class="container">
+    <div class="header">
+        <div class="logo"><img src="img/logo2.png" alt="tempest logo"></div>
+        <div class="menu">
+            <a href="">My page</a>
+            <a href="">Help</a>
+            <a href="">Contact</a>
+            <a href="">Log out</a>
+        </div>
+    </div>
+    
+    <div class="task">
+        <p class="title">物件基礎情報管理</p>
+        <div class="task_bar">
+           <button onclick="location.href='property_info_mgt_basic.html'">基礎情報</button>
+           <button onclick="location.href='property_info_mgt_repair.html'">工事履歴</button>
+           <button onclick="location.href='property_info_mgt_pic.html'">写真管理</button>
+           <button onclick="location.href='property_summary.html'">一覧へ戻る</button>
+        </div>
+    </div>
+    
+    <div class="register_form">
+      <form method="POST" action="#">
+        <table border="0">
+          <tr>
+            <td>物件名</td>
+            <td><input type="text" name="prop_name"></td>
+          </tr>
+          <tr>
+            <td>住所</td>
+            <td>        <input type="text" name="prop_address"></td>
+          </tr>
+          <tr>
+            <td>駅歩(分)</td>
+            <td>        <input type="text" name="distance"></td>
+          </tr>
+          <tr>
+            <td>構造</td>
+            <td>
+              <select name="structure_id" id="">
+                <option value="1">鉄骨鉄筋コンクリート(SRC)</option>
+                <option value="2">鉄筋コンクリート(RC)</option>
+                <option value="3">鉄骨(S)</option>
+                <option value="4">木造(W)</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>建築年月</td>
+            <td><input type="text" name="built_date" placeholder="例：2011年2月の場合は201102"></td>
+          </tr>
+          <tr>
+            <td>取得年月</td>
+            <td><input type="text" name="buy_date" placeholder="例：2011年2月の場合は201102"></td>
+          </tr>
+          <tr>
+            <td>取得価額(万円)</td>
+            <td><input type="text" name="price"></td>
+          </tr>
+          <tr>
+            <td>借入金利</td>
+            <td><input type="text" name="interest_rate"></td>
+          </tr>
+          <tr>
+            <td>階数</td>
+            <td><input type="text" name="number_of_floors"></td>
+          </tr>
+          <tr>
+            <td>部屋数</td>
+            <td><input type="text" name="number_of_rooms"></td>
+          </tr>
+          <tr>
+            <td>管理業者</td>
+            <td class="com_items">
+             <table>
+              <tr>
+                <td>名称</td>
+                <td><input type="text" name="com_name"></td>
+              </tr>
+              <tr>
+                <td>住所</td>
+                <td><input type="text" name="com_address"></td>
+              </tr>
+              <tr>
+                <td>tel</td>
+                <td><input type="text" name="com_tel"  placeholder="ハイフンなし"></td>
+              </tr>
+              <tr>
+                <td>mail</td>
+                <td><input type="text" name="com_mail"></td>
+              </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+        <div class="sub_box">
+        <input class="submit" type="submit" value="登録">
+        </div>
+      </form>
+
+    </div>
+    
+ </div>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+.main_box{
+  display: flex;
+  justify-content: flex-start;
+  margin: 3% auto;
+  width: 90%;
+  background-color: rgba(211, 211, 211, 0.2);
+  border-radius: 10px;
+  padding: 2%;
+
+}
+
+.main_box td, .main_box th{
+  font-size: 14px;
+}
+
+.main_left{
+/*  margin-right: 5%;*/
+  width: 10%;
+}
+
+.main_right{
+  width: 90%;
+}
+
+.repair_history{
+  width: 95%;
+  margin-bottom: 1%;
+  background-color: rgba(211, 211, 211, 1);
+  border-radius: 6px;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between
+}
+
+.repair_table{
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.repair_table tr{
+/*  margin: 10% 0;*/
+  height: 25px;
+/*  border-bottom: 1px solid ;*/
+/*  text-align: center;*/
+  vertical-align: baseline;
+  word-wrap: normal;
+}
+
+.repair_table td{
+/*  margin: 10% 0;*/
+/*  height: 25px;*/
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  padding: 0 0.5%;
+/*  text-align: left;*/
+}
+
+/*
+.repair_date{
+  width: 100px;
+}
+
+.repair_detail{
+  width: 25%;
+}
+
+.com_name{
+  width: 20%;
+}
+
+.remark{
+  width: 250px;
+}
+*/
+
+.btn_box{
+/*  width: 10%;*/
+/*    display: flex;*/
+/*  justify-content: space-between;*/
+/*  align-items: flex-end*/
+}
+
+.btns{
+  display: flex;
+  justify-content: space-between;
+/*  align-items: flex-end;*/
+}
+
+.btns div{
+  margin:10% 0 3%;
+  font-size: 13px;
+  padding: 6.5% 8% 0 8%;
+  border-radius: 5px;
+/*  border: 1px solid rgba(173, 216, 230, 1);*/
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+/*
+  display: flex;
+  align-items: center;
+*/
+/*  background-color: rgba(173, 216, 230, 1);*/
+  cursor: pointer;
+}
+
+.remark_comment{
+  text-align: left;
+}
+
+.repair_register{
+  width: 95%;
+  margin-bottom: 5%;
+  background-color: rgba(211, 211, 211, 1);
+  border-radius: 6px;
+  padding: 2%;
+}
+
+.repair_register_outside{
+  margin: 1%;
+  }
+
+.repair_register_outside input{
+  width: 30%;
+  }
+
+.repair_register table tr td .repair_register_inside td{
+  padding: 1% 3%;
+  }
+
+.repair_register td{
+  padding: 0.5% 1%;
+  vertical-align: top;
+  }
+
+.repair_register table tr td .repair_register_inside td input{
+  width: 134%;
+  }
+
+/*
+.repair_register table tr td .repair_register_inside tr td textarea{
+  : ;
+    width: 100%;
+  }
+*/
+
+.submit{
+  width: 10%;
+  height:30px;
+  cursor:pointer;
+  margin: 1% 0 0 10.85%;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
